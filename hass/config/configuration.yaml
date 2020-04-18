@@ -1,0 +1,185 @@
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+# http:
+#   base_url: example.duckdns.org:8123
+smartir:
+  update_branch: rc
+# Text to speech
+tts:
+  - platform: google_translate
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+homeassistant:
+  customize: !include customize.yaml
+  packages: !include_dir_named packages
+http:
+  base_url: rexviet-iot.duckdns.org
+  ssl_certificate: /ssl/fullchain.pem
+  ssl_key: /ssl/privkey.pem
+
+mqtt:
+  broker: !env_var MQTT_HOST
+#  broker: "192.168.1.44"
+  username: !env_var MQTT_USER
+  password: !env_var MQTT_PASSWORD
+
+switch:
+  - platform: mqtt
+    name: "Kitchen Light"
+    state_topic: "83638818396607/switch.1/state"
+    command_topic: "83638818396607/switch.1/set"
+    payload_on: "on"
+    payload_off: "off"
+    state_on: "on"
+    state_off: "off"
+  - platform: mqtt
+    name: "Living Room Light"
+    state_topic: "83638818396607/switch.2/state"
+    command_topic: "83638818396607/switch.2/set"
+    payload_on: "on"
+    payload_off: "off"
+    state_on: "on"
+    state_off: "off"
+  - platform: mqtt
+    name: "Zigbee2mqtt Main join"
+    state_topic: "zigbee2mqtt/bridge/config/permit_join"
+    command_topic: "zigbee2mqtt/bridge/config/permit_join"
+    payload_on: "true"
+    payload_off: "false"
+  - platform: broadlink                                                                                                                            
+    host:  192.168.1.4                                                                                                                                                  
+    mac: '78:0f:77:63:5e:23'                                                                                                                       
+    type: rm2_pro_plus                                                                                                                                                  
+    friendly_name: 'Broadlink Remote'                                                                                                              
+    scan_interval: 3
+  - platform: broadlink
+    host:  192.168.1.2
+    mac: '78:0f:77:63:5e:23'
+    type: rm2_pro_plus
+    friendly_name: 'Broadlink Remote'
+    scan_interval: 3  
+    switches:
+      ac:
+        friendly_name: LG AC
+        command_on: 'JgBAAAABIooQNBIREhASEBIzEhASERERERERERERERERERERERERERIQEhERMxIzERESMxERETMSMxIQEREREREADQUAAAAAAAAAAA=='
+        command_off: 'JgBAAAABJIoRNBASEBIQEhE0EBIQEhESEDUQMxESEBIQEhERERIREhASEBIQEhASEBIQNBATEDMREhASERIQNBAADQUAAAAAAAAAAA=='
+      led_strip:
+        friendly_name: Led Strip                                                                                                   
+        command_on: 'JgCYAAABKZUTExITExITExMSExITExMSEzcTNxM3EzcTEhM3EzcTNxM3EzcSExMSExMTEhMSExMTEhMTEjcTNxM3EzcTNxM3EwAMUwABKpUTEhMSExMTEhMTEhMTEhMTEjgSNxM3EzcTExI3EzcTNxM3EzcTEhMTExITEhMTExITExITEzcTNxI4EjcTNxM3EwAFSAABKUoTAA0F' 
+        command_off: 'JgBQAAABKpUTExMSExMSExMSExMTEhMSEzcTNxM3EzcTEhM3EzcTNxMTEjcTExMSExMSExMSExMTNxITEzcTNxM3EzcSNxM3EwAFSAABKkoTAA0FAAAAAAAAAAA='
+
+sensor:
+  - platform: command_line
+    name: Raspberry C Temp
+    command: "cat /sys/class/thermal/thermal_zone0/temp"
+    unit_of_measurement: "°C"
+    value_template: '{{ value | multiply(0.001) }}'
+  - platform: "mqtt"
+    state_topic: "zigbee2mqtt/zb_ss_do_br"
+    availability_topic: "zigbee2mqtt/bridge/state"
+    unit_of_measurement: "%"
+    device_class: "battery"
+    value_template: "{{ value_json.battery }}"
+  - platform: "mqtt"
+    state_topic: "zigbee2mqtt/zb_ss_do_br"
+    availability_topic: "zigbee2mqtt/bridge/state"
+    icon: "mdi:signal"
+    unit_of_measurement: "lqi"
+    value_template: "{{ value_json.linkquality }}"
+  - platform: "mqtt"                            
+    state_topic: "zigbee2mqtt/zb_ss_do_lr"       
+    availability_topic: "zigbee2mqtt/bridge/state"
+    unit_of_measurement: "%"                            
+    device_class: "battery"                               
+    value_template: "{{ value_json.battery }}"   
+  - platform: "mqtt"                                    
+    state_topic: "zigbee2mqtt/zb_ss_do_lr"
+    availability_topic: "zigbee2mqtt/bridge/state"      
+    icon: "mdi:signal"                                    
+    unit_of_measurement: "lqi"                   
+    value_template: "{{ value_json.linkquality }}"
+
+binary_sensor:
+  - platform: "mqtt"
+    name: "Bedroom door"
+    state_topic: "zigbee2mqtt/zb_ss_do_br"
+    availability_topic: "zigbee2mqtt/bridge/state"
+    payload_on: false
+    payload_off: true
+    value_template: "{{ value_json.contact }}"
+    device_class: "door"
+  - platform: "mqtt"                                      
+    name: "Main door"                          
+    state_topic: "zigbee2mqtt/zb_ss_do_lr"
+    availability_topic: "zigbee2mqtt/bridge/state"
+    payload_on: false                                   
+    payload_off: true                                     
+    value_template: "{{ value_json.contact }}"    
+    device_class: "door"
+  - platform: "mqtt"
+    name: "Cam"
+    state_topic: "cam_sensor/motion"
+#    availability_topic: "cam_sensor"
+    payload_on: true
+    payload_off: false
+    value_template: "{{ value_json.occupied }}"
+    device_class: "door"
+# Example configuration.yaml entry for Netgear device
+#device_tracker:
+#  - platform: netgear
+#    host: 192.168.1.2
+#    username: rexviet@gmail.com
+#    password: Viet123!@#
+#    new_device_defaults:
+#      track_new_devices: true
+
+notify:
+  - name: door_log
+    platform: file
+    filename: door.json
+
+remote:
+  - platform: broadlink
+    host: 192.168.1.2
+    mac:  78:0f:77:63:5e:23
+
+input_select:
+  leds_strip:
+    name: LEDs strip select
+    options:
+      - Red
+      - Green
+      - Blue
+      - White
+      - Pink
+      - Yellow
+      - Orange
+    initial: Pink
+    icon: mdi:panda
+
+customizer:
+  custom_ui: local
+
+climate:
+  - platform: smartir
+    name: Office AC
+    unique_id: office_ac
+    device_code: 1062
+    controller_data: 192.168.1.2
+    temperature_sensor: sensor.temperature
+    humidity_sensor: sensor.humidity
+    power_sensor: binary_sensor.ac_power
+
+camera:
+  - platform: ffmpeg
+    name: EZVIZ
+    input: rtsp://admin:UTCSIZ@192.168.1.7:554
+
+stream:

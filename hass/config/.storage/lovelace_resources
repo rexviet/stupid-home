@@ -1,0 +1,13 @@
+{
+    "data": {
+        "items": [
+            {
+                "id": "fe63d0f104754f63990250076f84df7f",
+                "type": "module",
+                "url": "/local/camera-card.js"
+            }
+        ]
+    },
+    "key": "lovelace_resources",
+    "version": 1
+}

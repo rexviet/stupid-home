@@ -1,0 +1,20 @@
+{
+    "data": {
+        "areas": [
+            {
+                "id": "05d5fe78d9b3468c97bfd6339ec40954",
+                "name": "Ph\u00f2ng kh\u00e1ch"
+            },
+            {
+                "id": "0d11a122fbce4d5abe2ad8c0eee453c4",
+                "name": "Ph\u00f2ng b\u1ebfp"
+            },
+            {
+                "id": "c415c53c076a4fa7b0bc26797c6e26ab",
+                "name": "Ph\u00f2ng ng\u1ee7"
+            }
+        ]
+    },
+    "key": "core.area_registry",
+    "version": 1
+}

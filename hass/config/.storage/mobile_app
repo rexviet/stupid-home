@@ -1,0 +1,194 @@
+{
+    "data": {
+        "binary_sensor": {},
+        "deleted_ids": [],
+        "sensor": {
+            "97fdb5fc17b8752fd831f2b6b752ae9f9dae3c9c3ac49dd0a1aea67a4b63fece_activity": {
+                "added": true,
+                "attributes": {
+                    "Confidence": "High",
+                    "Types": [
+                        "Unknown"
+                    ]
+                },
+                "icon": "mdi:help-circle",
+                "name": "Activity",
+                "state": "Unknown",
+                "type": "sensor",
+                "unique_id": "activity",
+                "webhook_id": "97fdb5fc17b8752fd831f2b6b752ae9f9dae3c9c3ac49dd0a1aea67a4b63fece"
+            },
+            "97fdb5fc17b8752fd831f2b6b752ae9f9dae3c9c3ac49dd0a1aea67a4b63fece_battery_level": {
+                "added": true,
+                "attributes": {
+                    "Battery State": "Charging"
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-charging-20",
+                "name": "Battery Level",
+                "state": 27,
+                "type": "sensor",
+                "unique_id": "battery_level",
+                "unit_of_measurement": "%",
+                "webhook_id": "97fdb5fc17b8752fd831f2b6b752ae9f9dae3c9c3ac49dd0a1aea67a4b63fece"
+            },
+            "97fdb5fc17b8752fd831f2b6b752ae9f9dae3c9c3ac49dd0a1aea67a4b63fece_battery_state": {
+                "added": true,
+                "attributes": {
+                    "Battery Level": 27
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-charging-20",
+                "name": "Battery State",
+                "state": "Charging",
+                "type": "sensor",
+                "unique_id": "battery_state",
+                "webhook_id": "97fdb5fc17b8752fd831f2b6b752ae9f9dae3c9c3ac49dd0a1aea67a4b63fece"
+            },
+            "97fdb5fc17b8752fd831f2b6b752ae9f9dae3c9c3ac49dd0a1aea67a4b63fece_connectivity_bssid": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi-star",
+                "name": "BSSID",
+                "state": "dc:f8:b9:e6:5f:52",
+                "type": "sensor",
+                "unique_id": "connectivity_bssid",
+                "webhook_id": "97fdb5fc17b8752fd831f2b6b752ae9f9dae3c9c3ac49dd0a1aea67a4b63fece"
+            },
+            "97fdb5fc17b8752fd831f2b6b752ae9f9dae3c9c3ac49dd0a1aea67a4b63fece_connectivity_connection_type": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi",
+                "name": "Connection Type",
+                "state": "Wi-Fi",
+                "type": "sensor",
+                "unique_id": "connectivity_connection_type",
+                "webhook_id": "97fdb5fc17b8752fd831f2b6b752ae9f9dae3c9c3ac49dd0a1aea67a4b63fece"
+            },
+            "97fdb5fc17b8752fd831f2b6b752ae9f9dae3c9c3ac49dd0a1aea67a4b63fece_connectivity_sim_1": {
+                "added": true,
+                "attributes": {
+                    "Allows VoIP": true,
+                    "Carrier ID": "0000000100000001",
+                    "Carrier Name": "Viettel",
+                    "Current Radio Technology": "Long-Term Evolution (LTE)",
+                    "ISO Country Code": "vn",
+                    "Mobile Country Code": "452",
+                    "Mobile Network Code": "04"
+                },
+                "icon": "mdi:sim",
+                "name": "SIM 1",
+                "state": "Viettel",
+                "type": "sensor",
+                "unique_id": "connectivity_sim_1",
+                "webhook_id": "97fdb5fc17b8752fd831f2b6b752ae9f9dae3c9c3ac49dd0a1aea67a4b63fece"
+            },
+            "97fdb5fc17b8752fd831f2b6b752ae9f9dae3c9c3ac49dd0a1aea67a4b63fece_connectivity_ssid": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi",
+                "name": "SSID",
+                "state": "Rexviet",
+                "type": "sensor",
+                "unique_id": "connectivity_ssid",
+                "webhook_id": "97fdb5fc17b8752fd831f2b6b752ae9f9dae3c9c3ac49dd0a1aea67a4b63fece"
+            },
+            "97fdb5fc17b8752fd831f2b6b752ae9f9dae3c9c3ac49dd0a1aea67a4b63fece_geocoded_location": {
+                "added": true,
+                "attributes": {
+                    "Administrative Area": "Th\u00e0nh Ph\u1ed1 H\u1ed3 Ch\u00ed Minh",
+                    "Areas Of Interest": "N/A",
+                    "Country": "Vi\u1ec7t Nam",
+                    "ISO Country Code": "VN",
+                    "Inland Water": "N/A",
+                    "Locality": "H\u1ed3 Ch\u00ed Minh",
+                    "Location": [
+                        10.804695129394531,
+                        106.64087708471199
+                    ],
+                    "Name": "H\u1ebbm 50 \u0110\u01b0\u1eddng Nh\u1ea5t Chi Mai",
+                    "Ocean": "N/A",
+                    "Postal Code": "N/A",
+                    "Sub Administrative Area": "Qu\u1eadn T\u00e2n B\u00ecnh",
+                    "Sub Locality": "Ph\u01b0\u1eddng 13",
+                    "Sub Thoroughfare": "N/A",
+                    "Thoroughfare": "H\u1ebbm 50 \u0110\u01b0\u1eddng Nh\u1ea5t Chi Mai",
+                    "Time Zone": "Asia/Ho_Chi_Minh"
+                },
+                "icon": "mdi:map",
+                "name": "Geocoded Location",
+                "state": "H\u1ebbm 50 \u0110\u01b0\u1eddng Nh\u1ea5t Chi Mai\nTh\u00e0nh Ph\u1ed1 H\u1ed3 Ch\u00ed Minh\nH\u1ed3 Ch\u00ed Minh\nVi\u1ec7t Nam",
+                "type": "sensor",
+                "unique_id": "geocoded_location",
+                "webhook_id": "97fdb5fc17b8752fd831f2b6b752ae9f9dae3c9c3ac49dd0a1aea67a4b63fece"
+            },
+            "97fdb5fc17b8752fd831f2b6b752ae9f9dae3c9c3ac49dd0a1aea67a4b63fece_last_update_trigger": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:cellphone-wireless",
+                "name": "Last Update Trigger",
+                "state": "Initial",
+                "type": "sensor",
+                "unique_id": "last_update_trigger",
+                "webhook_id": "97fdb5fc17b8752fd831f2b6b752ae9f9dae3c9c3ac49dd0a1aea67a4b63fece"
+            },
+            "97fdb5fc17b8752fd831f2b6b752ae9f9dae3c9c3ac49dd0a1aea67a4b63fece_pedometer_avg_active_pace": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:speedometer",
+                "name": "Average Active Pace",
+                "state": 1,
+                "type": "sensor",
+                "unique_id": "pedometer_avg_active_pace",
+                "unit_of_measurement": "m/s",
+                "webhook_id": "97fdb5fc17b8752fd831f2b6b752ae9f9dae3c9c3ac49dd0a1aea67a4b63fece"
+            },
+            "97fdb5fc17b8752fd831f2b6b752ae9f9dae3c9c3ac49dd0a1aea67a4b63fece_pedometer_distance": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:hiking",
+                "name": "Distance",
+                "state": 384,
+                "type": "sensor",
+                "unique_id": "pedometer_distance",
+                "unit_of_measurement": "m",
+                "webhook_id": "97fdb5fc17b8752fd831f2b6b752ae9f9dae3c9c3ac49dd0a1aea67a4b63fece"
+            },
+            "97fdb5fc17b8752fd831f2b6b752ae9f9dae3c9c3ac49dd0a1aea67a4b63fece_pedometer_floors_ascended": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:slope-uphill",
+                "name": "Floors Ascended",
+                "state": 0,
+                "type": "sensor",
+                "unique_id": "pedometer_floors_ascended",
+                "unit_of_measurement": "floors",
+                "webhook_id": "97fdb5fc17b8752fd831f2b6b752ae9f9dae3c9c3ac49dd0a1aea67a4b63fece"
+            },
+            "97fdb5fc17b8752fd831f2b6b752ae9f9dae3c9c3ac49dd0a1aea67a4b63fece_pedometer_floors_descended": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:slope-downhill",
+                "name": "Floors Descended",
+                "state": 0,
+                "type": "sensor",
+                "unique_id": "pedometer_floors_descended",
+                "unit_of_measurement": "floors",
+                "webhook_id": "97fdb5fc17b8752fd831f2b6b752ae9f9dae3c9c3ac49dd0a1aea67a4b63fece"
+            },
+            "97fdb5fc17b8752fd831f2b6b752ae9f9dae3c9c3ac49dd0a1aea67a4b63fece_pedometer_steps": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:walk",
+                "name": "Steps",
+                "state": 612,
+                "type": "sensor",
+                "unique_id": "pedometer_steps",
+                "unit_of_measurement": "steps",
+                "webhook_id": "97fdb5fc17b8752fd831f2b6b752ae9f9dae3c9c3ac49dd0a1aea67a4b63fece"
+            }
+        }
+    },
+    "key": "mobile_app",
+    "version": 1
+}

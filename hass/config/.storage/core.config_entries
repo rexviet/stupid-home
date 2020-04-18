@@ -1,0 +1,88 @@
+{
+    "data": {
+        "entries": [
+            {
+                "connection_class": "cloud_poll",
+                "data": {
+                    "track_home": true
+                },
+                "domain": "met",
+                "entry_id": "9de1cca4dee94714a412adc2ca7bf844",
+                "options": {},
+                "source": "onboarding",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Home",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {},
+                "domain": "mqtt",
+                "entry_id": "2b80e2f500324be88179197b7a32f648",
+                "options": {},
+                "source": "import",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "configuration.yaml",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "cloud_push",
+                "data": {
+                    "app_data": {
+                        "push_token": "fcTrbAyFYYA:APA91bGuGiVDHFx4KTFoIwGEnzc23APO4l1w60k3-rsUjJPnDX1jB_5rz3CnfRnkC_mIsiXl6k0_HMgTL5m_IWyCdPcsS4EsNn8AOLw-iWBnXSl2kcknX03ePyxYHJmd8PGZl1bv_O6l",
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
+                    },
+                    "app_id": "io.robbie.HomeAssistant",
+                    "app_name": "Home Assistant",
+                    "app_version": "2.0.0 (69)",
+                    "device_id": "79ea077125d4407aa0b40ade086440ab",
+                    "device_name": "TP-LINK_810E",
+                    "manufacturer": "Apple",
+                    "model": "iPhone 7",
+                    "os_name": "iOS",
+                    "os_version": "13.3.1",
+                    "secret": "4f78e1008554fb0630ce3f1f381594cbf175d35bd90ff186a656791f843fd291",
+                    "supports_encryption": true,
+                    "user_id": "1c4765156725429da3a1a5b29eb4b59d",
+                    "webhook_id": "97fdb5fc17b8752fd831f2b6b752ae9f9dae3c9c3ac49dd0a1aea67a4b63fece"
+                },
+                "domain": "mobile_app",
+                "entry_id": "7c00d3db5cb24345bfabce1cdb7cdfc1",
+                "options": {},
+                "source": "registration",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "TP-LINK_810E",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "cloud_poll",
+                "data": {
+                    "authorization": "Bearer N2I5M2M1OGItOTAyZi00NzNmLThmY2QtMDUxNDE3NGFkMWNh",
+                    "password": "Viet123!@#",
+                    "username": "rexviet@gmail.com"
+                },
+                "domain": "life360",
+                "entry_id": "e9be9e883c7d4ca38f8bdd57a3f596d3",
+                "options": {},
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "rexviet@gmail.com",
+                "unique_id": null,
+                "version": 1
+            }
+        ]
+    },
+    "key": "core.config_entries",
+    "version": 1
+}

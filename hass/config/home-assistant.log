@@ -1,0 +1,7 @@
+2020-04-18 09:25:06 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for zigbee2mqtt_networkmap which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
+2020-04-18 09:25:06 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for smartir which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
+2020-04-18 09:25:06 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for customizer which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
+2020-04-18 09:25:07 WARNING (MainThread) [homeassistant.components.automation] The 'hide_entity' option (with value 'True') is deprecated, please remove it from your configuration. This option will become invalid in version 0.110
+2020-04-18 09:25:07 WARNING (MainThread) [homeassistant.components.automation] The 'hide_entity' option (with value 'True') is deprecated, please remove it from your configuration. This option will become invalid in version 0.110
+2020-04-18 09:25:18 WARNING (MainThread) [homeassistant.components.switch] Setup of switch platform broadlink is taking over 10 seconds.
+2020-04-18 09:25:18 ERROR (SyncWorker_31) [homeassistant.components.broadlink.switch] Failed to connect to device

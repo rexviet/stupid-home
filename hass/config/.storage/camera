@@ -1,0 +1,9 @@
+{
+    "data": {
+        "camera.ezviz": {
+            "preload_stream": false
+        }
+    },
+    "key": "camera",
+    "version": 1
+}

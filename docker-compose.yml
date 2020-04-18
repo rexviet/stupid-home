@@ -1,0 +1,38 @@
+version: "3"
+
+services:
+  hass:
+    image: "homeassistant/home-assistant:stable"
+    volumes:
+      - ./hass/addons:/addons
+      - ./hass/backup:/backup
+      - ./hass/config:/config
+      - ./hass/share:/share
+      - ./hass/ssl:/ssl
+#    ports:
+#      - "8123:8123"
+    network_mode: host
+    tty: true
+    restart: always
+    container_name: hass
+    env_file:
+      - ./hass/.env
+
+  mqtt:
+    build: ./mqtt
+    container_name: mqtt
+    restart: always
+    network_mode: host
+    volumes:
+      - ./mqtt/mosquitto.conf:/mosquitto/config/mosquitto.conf
+
+  opencv:
+    build: ./cam-sensor
+    container_name: opencv
+    restart: always
+    network_mode: host
+    volumes:
+      - ./cam-sensor:/app
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    env_file:
+      - ./cam-sensor/.env

@@ -1,0 +1,510 @@
+{
+    "data": [
+        {
+            "last_seen": "2020-04-18T09:25:30.317381+00:00",
+            "state": {
+                "attributes": {
+                    "editable": true,
+                    "friendly_name": "Rexviet IoT",
+                    "gps_accuracy": 50,
+                    "id": "rexviet_iot",
+                    "latitude": 10.804931640625,
+                    "longitude": 106.64071579058813,
+                    "source": "device_tracker.tp_link_810e",
+                    "user_id": "1c4765156725429da3a1a5b29eb4b59d"
+                },
+                "context": {
+                    "id": "eb48a735fa104244b14d305d7f9cfd26",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "person.rexviet_iot",
+                "last_changed": "2020-04-18T09:25:08.196028+00:00",
+                "last_updated": "2020-04-18T09:25:18.328059+00:00",
+                "state": "home"
+            }
+        },
+        {
+            "last_seen": "2020-04-18T09:25:30.317381+00:00",
+            "state": {
+                "attributes": {
+                    "editable": false,
+                    "friendly_name": "LEDs strip select",
+                    "icon": "mdi:panda",
+                    "options": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Pink",
+                        "Yellow",
+                        "Orange"
+                    ]
+                },
+                "context": {
+                    "id": "817ef1fa20cf4d5f922d5c0f9588a982",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_select.leds_strip",
+                "last_changed": "2020-04-18T09:25:08.202239+00:00",
+                "last_updated": "2020-04-18T09:25:08.202239+00:00",
+                "state": "Pink"
+            }
+        },
+        {
+            "last_seen": "2020-04-18T09:25:30.317381+00:00",
+            "state": {
+                "attributes": {
+                    "editable": false,
+                    "friendly_name": "Zigbee2mqtt Old Name",
+                    "max": 100,
+                    "min": 0,
+                    "mode": "text",
+                    "pattern": null
+                },
+                "context": {
+                    "id": "3d8547441a9a40aeaf76cf6473f82cea",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_text.zigbee2mqtt_old_name",
+                "last_changed": "2020-04-18T09:25:08.202355+00:00",
+                "last_updated": "2020-04-18T09:25:08.202355+00:00",
+                "state": "unknown"
+            }
+        },
+        {
+            "last_seen": "2020-04-18T09:25:30.317381+00:00",
+            "state": {
+                "attributes": {
+                    "duration": "0:05:00",
+                    "editable": false,
+                    "friendly_name": "Time remaining",
+                    "remaining": "0:05:00"
+                },
+                "context": {
+                    "id": "ed14c64685bd43b09ed30790a5f03315",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "timer.zigbee_permit_join",
+                "last_changed": "2020-04-18T09:25:08.202439+00:00",
+                "last_updated": "2020-04-18T09:25:08.202439+00:00",
+                "state": "idle"
+            }
+        },
+        {
+            "last_seen": "2020-04-18T09:25:30.317381+00:00",
+            "state": {
+                "attributes": {
+                    "commands_encoding": "Base64",
+                    "current_temperature": null,
+                    "device_code": 1062,
+                    "fan_mode": "auto",
+                    "fan_modes": [
+                        "auto",
+                        "low",
+                        "mid",
+                        "high"
+                    ],
+                    "friendly_name": "Office AC",
+                    "hvac_modes": [
+                        "off",
+                        "cool",
+                        "heat",
+                        "dry",
+                        "heat_cool"
+                    ],
+                    "last_on_operation": "cool",
+                    "manufacturer": "LG",
+                    "max_temp": 30.0,
+                    "min_temp": 18.0,
+                    "supported_controller": "Broadlink",
+                    "supported_features": 9,
+                    "supported_models": [
+                        "P12RK"
+                    ],
+                    "target_temp_step": 1.0,
+                    "temperature": 19
+                },
+                "context": {
+                    "id": "50ddd34b64bd4eae8c8c57502c48f9c8",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "climate.office_ac",
+                "last_changed": "2020-04-18T09:25:08.202637+00:00",
+                "last_updated": "2020-04-18T09:25:08.202637+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-18T09:25:30.317381+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Turn on Living Room Light when Bedroom Door Open",
+                    "id": "1586145239831",
+                    "last_triggered": "2020-04-16T16:07:43.190695+00:00"
+                },
+                "context": {
+                    "id": "8feff41691304782b2dad796dc7a7147",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.open_living_room_light_when_bedroom_door_open",
+                "last_changed": "2020-04-18T09:25:08.202774+00:00",
+                "last_updated": "2020-04-18T09:25:08.202774+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-18T09:25:30.317381+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Turn off Living Room Light when Bedroom Door close",
+                    "id": "1586145647014",
+                    "last_triggered": "2020-04-14T16:59:51.987163+00:00"
+                },
+                "context": {
+                    "id": "cb8279147d154e69b7ced5ee8051aea1",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.turn_off_living_room_light_when_bedroom_door_close",
+                "last_changed": "2020-04-18T09:25:08.202900+00:00",
+                "last_updated": "2020-04-18T09:25:08.202900+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-18T09:25:30.317381+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Turn on Living Room Light when Main Door Open",
+                    "id": "1586145239832",
+                    "last_triggered": "2020-04-16T12:00:48.752785+00:00"
+                },
+                "context": {
+                    "id": "d561ea3f3b43415886639f188ef5ab0f",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.turn_on_living_room_light_when_main_door_open",
+                "last_changed": "2020-04-18T09:25:08.203023+00:00",
+                "last_updated": "2020-04-18T09:25:08.203023+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-18T09:25:30.317381+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Set strip color",
+                    "id": "1586858261533",
+                    "last_triggered": "2020-04-18T05:39:27.802222+00:00"
+                },
+                "context": {
+                    "id": "bd5c868aa8ca4b00b91cd43ff02a6309",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.set_strip_color_to_red",
+                "last_changed": "2020-04-18T09:25:08.203139+00:00",
+                "last_updated": "2020-04-18T09:25:08.203139+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-18T09:25:30.317381+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Turn on Led strip",
+                    "id": "1586959567608",
+                    "last_triggered": "2020-04-17T12:23:45.030532+00:00"
+                },
+                "context": {
+                    "id": "7c22599c29e44232b35b0499796002f4",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.turn_on_led_strip",
+                "last_changed": "2020-04-18T09:25:08.203252+00:00",
+                "last_updated": "2020-04-18T09:25:08.203252+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-18T09:25:30.317381+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Zigbee2mqtt Log Level",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "0ae9c9a183e5473d88109c075440483c",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.zigbee2mqtt_log_level",
+                "last_changed": "2020-04-18T09:25:08.203367+00:00",
+                "last_updated": "2020-04-18T09:25:08.203367+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-18T09:25:30.317381+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Zigbee Join Enabled",
+                    "id": "zigbee_join_enabled",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "ef8b84b4a5fa429087448ce9f62f4fa1",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.zigbee_join_enabled",
+                "last_changed": "2020-04-18T09:25:08.203478+00:00",
+                "last_updated": "2020-04-18T09:25:08.203478+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-18T09:25:30.317381+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Zigbee Join Disabled",
+                    "id": "zigbee_join_disabled",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "3068122460064ca6b8e47c3544163e40",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.zigbee_join_disabled",
+                "last_changed": "2020-04-18T09:25:08.203591+00:00",
+                "last_updated": "2020-04-18T09:25:08.203591+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-18T09:25:30.317381+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Zigbee Map Update",
+                    "id": "zigbee2mqtt_networkmap",
+                    "last_triggered": "2020-04-18T09:20:00.005143+00:00"
+                },
+                "context": {
+                    "id": "9415d838835b45e5bd9ee8777b8b300d",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.zigbee_map_update",
+                "last_changed": "2020-04-18T09:25:08.203703+00:00",
+                "last_updated": "2020-04-18T09:25:08.203703+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-18T09:25:30.317381+00:00",
+            "state": {
+                "attributes": {
+                    "editable": false,
+                    "friendly_name": "Zigbee2mqtt Log Level",
+                    "icon": "mdi:format-list-bulleted",
+                    "options": [
+                        "debug",
+                        "info",
+                        "warn",
+                        "error"
+                    ]
+                },
+                "context": {
+                    "id": "6c2777c5a0f14c5f922a7c93a38910b4",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_select.zigbee2mqtt_log_level",
+                "last_changed": "2020-04-18T09:25:08.280835+00:00",
+                "last_updated": "2020-04-18T09:25:08.280835+00:00",
+                "state": "info"
+            }
+        },
+        {
+            "last_seen": "2020-04-18T09:25:30.317381+00:00",
+            "state": {
+                "attributes": {
+                    "editable": false,
+                    "friendly_name": "Zigbee2mqtt New Name",
+                    "max": 100,
+                    "min": 0,
+                    "mode": "text",
+                    "pattern": null
+                },
+                "context": {
+                    "id": "47e9019c90364b9aba25fef7294fae73",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_text.zigbee2mqtt_new_name",
+                "last_changed": "2020-04-18T09:25:08.280973+00:00",
+                "last_updated": "2020-04-18T09:25:08.280973+00:00",
+                "state": "unknown"
+            }
+        },
+        {
+            "last_seen": "2020-04-18T09:25:30.317381+00:00",
+            "state": {
+                "attributes": {
+                    "editable": false,
+                    "friendly_name": "Zigbee2mqtt Remove",
+                    "max": 100,
+                    "min": 0,
+                    "mode": "text",
+                    "pattern": null
+                },
+                "context": {
+                    "id": "38aa182a1bea40de9792469743500df8",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_text.zigbee2mqtt_remove",
+                "last_changed": "2020-04-18T09:25:08.353999+00:00",
+                "last_updated": "2020-04-18T09:25:08.353999+00:00",
+                "state": "unknown"
+            }
+        },
+        {
+            "last_seen": "2020-04-18T09:25:30.317381+00:00",
+            "state": {
+                "attributes": {
+                    "assumed_state": true,
+                    "friendly_name": "LG AC"
+                },
+                "context": {
+                    "id": "dea10cfdc2af4bdfb021c8f156f10b0a",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.ac",
+                "last_changed": "2020-04-18T09:25:08.398130+00:00",
+                "last_updated": "2020-04-18T09:25:08.398130+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-18T09:25:30.317381+00:00",
+            "state": {
+                "attributes": {
+                    "assumed_state": true,
+                    "friendly_name": "Led Strip"
+                },
+                "context": {
+                    "id": "237d89a7d3fc48edb84aee43f884a5bd",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.led_strip",
+                "last_changed": "2020-04-18T09:25:08.398251+00:00",
+                "last_updated": "2020-04-18T09:25:08.398251+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-18T09:25:30.317381+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Kitchen Light"
+                },
+                "context": {
+                    "id": "f6a71e45edf149559c3a66149abd7e64",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.kitchen_light",
+                "last_changed": "2020-04-18T09:25:08.423066+00:00",
+                "last_updated": "2020-04-18T09:25:08.423066+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-18T09:25:30.317381+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Living Room Light"
+                },
+                "context": {
+                    "id": "209973df2bbd43dabf654648c348e126",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.living_room_light",
+                "last_changed": "2020-04-18T09:25:08.429148+00:00",
+                "last_updated": "2020-04-18T09:25:08.429148+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-18T09:25:30.317381+00:00",
+            "state": {
+                "attributes": {
+                    "battery_level": 60,
+                    "friendly_name": "TP-LINK_810E",
+                    "gps_accuracy": 50,
+                    "latitude": 10.804931640625,
+                    "longitude": 106.64071579058813,
+                    "source_type": "gps"
+                },
+                "context": {
+                    "id": "5a0414fd8b19472788fd96c34043209e",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.tp_link_810e",
+                "last_changed": "2020-04-18T09:25:08.431303+00:00",
+                "last_updated": "2020-04-18T09:25:08.431303+00:00",
+                "state": "home"
+            }
+        },
+        {
+            "last_seen": "2020-04-18T09:25:30.317381+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Zigbee2mqtt Main join"
+                },
+                "context": {
+                    "id": "59738d750cf94bb2b5c9264f81e4d185",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.zigbee2mqtt_main_join",
+                "last_changed": "2020-04-18T09:25:08.431690+00:00",
+                "last_updated": "2020-04-18T09:25:08.431690+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-18T09:25:30.317381+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Zigbee2mqtt Main join"
+                },
+                "context": {
+                    "id": "ad18dfd5affb42249c23f069edd838ae",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.zigbee2mqtt_main_join_2",
+                "last_changed": "2020-04-18T09:25:08.432197+00:00",
+                "last_updated": "2020-04-18T09:25:08.432197+00:00",
+                "state": "off"
+            }
+        }
+    ],
+    "key": "core.restore_state",
+    "version": 1
+}

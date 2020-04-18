@@ -1,0 +1,108 @@
+{
+    "data": {
+        "config": {
+            "title": "Full House",
+            "views": [
+                {
+                    "badges": [
+                        {
+                            "entity": "person.rexviet_iot"
+                        },
+                        {
+                            "entity": "sun.sun"
+                        },
+                        {
+                            "entity": "sensor.raspberry_c_temp"
+                        }
+                    ],
+                    "cards": [
+                        {
+                            "entity": "weather.full_house",
+                            "type": "weather-forecast"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "switch.kitchen_light"
+                                },
+                                {
+                                    "entity": "switch.living_room_light"
+                                }
+                            ],
+                            "title": "Lights",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "automation.open_living_room_light_when_bedroom_door_open"
+                                },
+                                {
+                                    "entity": "automation.turn_off_living_room_light_when_bedroom_door_close"
+                                },
+                                {
+                                    "entity": "automation.turn_on_living_room_light_when_main_door_open"
+                                },
+                                {
+                                    "entity": "automation.turn_on_led_strip"
+                                }
+                            ],
+                            "title": "Automations",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "switch.zigbee2mqtt_main_join"
+                                }
+                            ],
+                            "title": "Zigbee Hub",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "switch.led_strip"
+                                },
+                                {
+                                    "entity": "input_select.leds_strip"
+                                }
+                            ],
+                            "title": "Led Strip",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "climate.office_ac",
+                            "name": "AC",
+                            "theme": "default",
+                            "type": "thermostat"
+                        },
+                        {
+                            "entity": "camera.ezviz",
+                            "name": "EZVIZ Camera",
+                            "type": "custom:camera-card"
+                        }
+                    ],
+                    "path": "default_view",
+                    "title": "Home"
+                },
+                {
+                    "badges": [
+                        {
+                            "entity": "switch.kitchen_light"
+                        },
+                        {
+                            "entity": "switch.living_room_light"
+                        }
+                    ],
+                    "cards": [],
+                    "panel": false,
+                    "path": "living-room",
+                    "title": "Living Room"
+                }
+            ]
+        }
+    },
+    "key": "lovelace",
+    "version": 1
+}

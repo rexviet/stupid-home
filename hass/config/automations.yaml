@@ -1,0 +1,106 @@
+- id: '1586145239831'
+  alias: Turn on Living Room Light when Bedroom Door Open
+  description: ''
+  trigger:
+  - entity_id: binary_sensor.bedroom_door
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition:
+  - condition: state
+    entity_id: switch.living_room_light
+    state: 'off'
+  - after: '18:00:00'
+    before: 05:00:00
+    condition: time
+  action:
+  - delay:
+      milliseconds: 500
+  - data: {}
+    entity_id: switch.living_room_light
+    service: switch.turn_on
+- id: '1586145647014'
+  alias: Turn off Living Room Light when Bedroom Door close
+  description: ''
+  trigger:
+  - entity_id: binary_sensor.bedroom_door
+    from: 'on'
+    platform: state
+    to: 'off'
+  condition:
+  - condition: state
+    entity_id: switch.living_room_light
+    state: 'on'
+  - after: '22:30:00'
+    before: 05:00:00
+    condition: time
+  action:
+  - data: {}
+    entity_id: switch.living_room_light
+    service: switch.turn_off
+- id: '1586145239832'
+  alias: Turn on Living Room Light when Main Door Open
+  description: ''
+  trigger:
+  - entity_id: binary_sensor.main_door
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition:
+  - condition: state
+    entity_id: switch.living_room_light
+    state: 'off'
+  - after: '18:00:00'
+    before: 05:00:00
+    condition: time
+  action:
+  - delay:
+      milliseconds: 500
+  - data: {}
+    entity_id: switch.living_room_light
+    service: switch.turn_on
+- id: '1586858261533'
+  alias: Set strip color
+  description: ''
+  trigger:
+  - entity_id: input_select.leds_strip
+    platform: state
+  - entity_id: switch.led_strip
+    platform: state
+    to: 'on'
+  condition:
+  - condition: state
+    entity_id: switch.led_strip
+    state: 'on'
+  action:
+  - data_template:
+      host: 192.168.1.2
+      packet: "{% set color = {\n     'Red': 'JgCQAAABKpUTExMSExITExMSExMTEhMSEzcTNxM3EzcTEhM3EzcTNxMSExMTNxMSExMSExMSExMTNxI3ExMTNxM3EzcSNxM3EwAIxgABKpUTExMSExMSExMSExMTEhMSEzcTNxM3EzcTEhM3EzcTNxMS',\n\
+        \     'Green': 'JgBYAAABKpUTEhMTEhMTEhMTExITExITEzcTNxM3EzcSExM3EzcTNxI4EhMTNxMSExMSExMSExMTEhM3ExMSNxM3EzcTNxM3EwAFRgABKksSAAxZAAEqShMADQU=',\n\
+        \     'Blue': 'JgBQAAABKZUTExITExITExMSExITExMSEzcTNxM3EzcTEhM3EzcTNxMSEzcTNxMSExMTEhMTEhMTNxMSExMSNxM3EzcTNxM3EwAFQwABKkoTAA0FAAAAAAAAAAA=',\n\
+        \     'White': 'JgBIAAABK5UTEhMSExMTEhMTExITExITEzcTNxM3EjcTExM3EzcTNxI3EzcTNxMTExITEhMTExITExITExITNxM3EzcTNxM3EwANBQ==',\n\
+        \     'Pink': 'JgBYAAABK5QTEhMTExITEhMTExITExMSEzcTNxM3EzcTEhM3EzcTNxMSEzcTNxMSEzcTExMSExMSNxMTExITNxMTEjcTNxM3EwAFQAABKkoTAAxSAAEqShMADQU=',\n\
+        \     'Yellow': 'JgBQAAABKpUTEhMTExITExITExITExMSEzcTNxM3EzcTEhM3EzcTNxMTExITNxMSEzcTExMSExMSNxM3ExMTNxITEzcTNxM3EwAFRAABKkoTAA0FAAAAAAAAAAA=',\n\
+        \     'Orange': 'JgBIAAABK5UTEhMTExITEhMTExITExMSEzcTNxM3EzcTEhM3EzcTNxMSExMTEhMTEjcTExMSExMTNxI3EzcTNxMTEzcTNxM3EgANBQ==',\n\
+        \   }  %}\n{% set packet = color[states('input_select.leds_strip')]  %} \"\
+        {{packet}}\"\n"
+    service: broadlink.send
+- id: '1586959567608'
+  alias: Turn on Led strip
+  description: ''
+  trigger:
+  - entity_id: binary_sensor.bedroom_door
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition:
+  - condition: state
+    entity_id: switch.led_strip
+    state: 'off'
+  - after: '17:30:00'
+    before: 06:00:00
+    condition: time
+  action:
+  - data: {}
+    entity_id: switch.led_strip
+    service: switch.turn_on

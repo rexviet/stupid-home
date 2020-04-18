@@ -1,0 +1,12 @@
+{
+    "data": {
+        "users": [
+            {
+                "password": "JDJiJDEyJEVWNDJQbzZkMzBmOTAyTVl4RDhtNHU2ck51YmliMHlIY2hIbU1BOHQ4YzFXb2Uwc00xeDRt",
+                "username": "rexviet"
+            }
+        ]
+    },
+    "key": "auth_provider.homeassistant",
+    "version": 1
+}

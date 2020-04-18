@@ -1,0 +1,6 @@
+'1586488029523':
+  alias: TestScript
+  sequence:
+  - data: {}
+    entity_id: switch.living_room_light
+    service: switch.turn_on

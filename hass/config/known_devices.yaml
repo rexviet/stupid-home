@@ -1,0 +1,9 @@
+
+
+life360_viet_phung:
+  hide_if_away: false
+  icon:
+  mac:
+  name: life360_viet_phung
+  picture:
+  track: true

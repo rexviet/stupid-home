@@ -1,0 +1,16 @@
+{
+    "data": {
+        "items": [
+            {
+                "device_trackers": [
+                    "device_tracker.tp_link_810e"
+                ],
+                "id": "rexviet_iot",
+                "name": "Rexviet IoT",
+                "user_id": "1c4765156725429da3a1a5b29eb4b59d"
+            }
+        ]
+    },
+    "key": "person",
+    "version": 2
+}

@@ -1,0 +1,7 @@
+/**/.env
+/hass/hass.tar
+/mqtt/mqttauth.txt
+/**/.idea
+/hass/backup
+/hass/ssl
+/hass/share

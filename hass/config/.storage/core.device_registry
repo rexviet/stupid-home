@@ -1,0 +1,28 @@
+{
+    "data": {
+        "devices": [
+            {
+                "area_id": null,
+                "config_entries": [
+                    "7c00d3db5cb24345bfabce1cdb7cdfc1"
+                ],
+                "connections": [],
+                "id": "a9ed6b7a560b4a3d93e2a3233067174c",
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "79ea077125d4407aa0b40ade086440ab"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": "iPhone 7",
+                "name": "TP-LINK_810E",
+                "name_by_user": null,
+                "sw_version": "13.3.1",
+                "via_device_id": null
+            }
+        ]
+    },
+    "key": "core.device_registry",
+    "version": 1
+}
